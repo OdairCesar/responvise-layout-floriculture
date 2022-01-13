@@ -155,6 +155,12 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  transition: .5s;
+}
+
+.scroll-header{
+  background-color: hsl(var(--hue), 4%, 95%);
+  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
 }
 
 .nav {
@@ -356,4 +362,13 @@ img {
   font-size: 1rem;
   color: var(--first-color);
   margin-top: 0.15rem;
+}
+
+.button--link{
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.button--link:hover .button__icon{
+  transform: translateX(.25rem);
 }
