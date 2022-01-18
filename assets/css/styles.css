@@ -44,8 +44,8 @@
 
 @media (min-width: 968px) {
   :root {
-    --big-font-size: 3.5rem;
-    --h1-font-size: 2.25rem;
+    --big-font-size: 2.9rem;
+    --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -891,7 +891,7 @@ the website, in dark theme
   }
 }
 
-@media screen and (min-width: 767px){
+@media(min-width: 767px){
   body{
     margin: 0;
   }
@@ -927,13 +927,16 @@ the website, in dark theme
   .home{
     padding: 10rem 0 5rem;
   }
+
   .home__container{
     align-items: center;
   }
+
   .home__img{
     width: 280px;
     order: 1;
   }
+
   .home__social{
     top: 30%;
   }
@@ -945,8 +948,136 @@ the website, in dark theme
   .footer__container{
     column-gap: 3rem;
   }
+
   .footer__subscribe{
     width: initial;
   }
 }
 
+/* For large devices */
+@media(min-width: 992px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section{
+    padding: 8rem 0 1rem;
+  }
+  .section__title,
+  .section__title-center{
+    font-size: var(--h1-font-size);
+  }
+
+  .home{
+    padding: 13rem 0 5rem;
+  }
+
+  .home__img{
+    width: 350px;
+  }
+
+  .home__description{
+    padding-right: 7rem;
+  }
+
+  .about__img{
+    width: 380px;
+  }
+
+  .steps__container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps__bg{
+    padding: 3.5rem 2.5rem;
+  }
+
+  .steps__card-title{
+    font-size: var(--normal-font-size);
+  }
+
+  .product__description{
+    padding: 0 16rem;
+  }
+
+  .product__container{
+    padding: 4rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem 6rem;
+  }
+
+  .product__img{
+    width: 160px;
+  }
+
+  .product__circle{
+    width: 110px;
+    height: 110px;
+  }
+
+  .product__title,
+  .product__price{
+    font-size: var(--normal-font-size);
+  }
+
+  .questions__container{
+    padding: 1rem 0 4rem;
+  }
+
+  .questions__title{
+    text-align: initial;
+  }
+
+  .questions__group{
+    row-gap: 2rem;
+  }
+
+  .questions__header{
+    padding: 1rem;
+  }
+
+  .questions__description{
+    padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+
+  .footer__logo{
+    font-size: var(--h3-font-size);
+  }
+
+  .footer__container{
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+  }
+
+  .footer__copy{
+    margin: 7rem 0 2rem;
+  }
+}
+
+@media(min-width: 1200px){
+  .home__social{
+    right: -3rem;
+    row-gap: 4.5rem;
+  }
+
+  .home__social-follow{
+    font-size: var(--small-font-size);
+  }
+
+  .home__social-follow::after{
+    width: 1.5rem;
+    right: -60%;
+  }
+
+  .home__social-link{
+    font-size: 1.15rem;
+  }
+
+  .about__container{
+    column-gap: 7rem;
+  }
+
+  .scrollup{
+    right: 3rem;
+  }
+}
