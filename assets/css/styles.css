@@ -843,3 +843,110 @@ the website, in dark theme
 .show-scroll{
   bottom: 1rem;
 }
+
+/* For small devices */
+@media(max-width: 320px){
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img{
+    width: 180px;
+  }
+  .home__title{
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg{
+    padding: 2rem 1rem;
+  }
+  .steps__card{
+    padding: 1.5rem;
+  }
+
+  .product__container{
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
+
+/* For medium devices */
+@media(min-width: 576px){
+  .steps__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product__description{
+    padding: 0 4rem;
+  }
+  .product__container{
+    grid-template-columns: repeat(2, 170px);
+    justify-content: center;
+    column-gap: 5rem;
+  }
+
+  .footer__subscribe{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 767px){
+  body{
+    margin: 0;
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 3rem;
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav__menu{
+    margin-left: auto;
+  }
+
+  .home__container,
+  .about__container,
+  .questions__container,
+  .contact__container,
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product__container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home{
+    padding: 10rem 0 5rem;
+  }
+  .home__container{
+    align-items: center;
+  }
+  .home__img{
+    width: 280px;
+    order: 1;
+  }
+  .home__social{
+    top: 30%;
+  }
+
+  .questions__container{
+    align-items: flex-start;
+  }
+
+  .footer__container{
+    column-gap: 3rem;
+  }
+  .footer__subscribe{
+    width: initial;
+  }
+}
+
